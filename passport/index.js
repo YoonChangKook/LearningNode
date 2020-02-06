@@ -1,5 +1,5 @@
 const local = require('./localStrategy')
-//const kakao = require('./kakaoStrategy')
+const kakao = require('./kakaoStrategy')
 //const naver = require('./naverStrategy')
 const { User } = require('../models')
 
@@ -18,6 +18,6 @@ module.exports = passport => {
   })
 
   local(passport)
-  //kakao(passport)
+  kakao(passport)
   //naver(passport)
 }
